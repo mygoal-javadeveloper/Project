@@ -29,7 +29,7 @@ public class UpdateCsvToSqlite {
 		}
 			PreparedStatement ps;
 			BufferedReader br = new BufferedReader(new FileReader(f1));
-			br.readLine();
+			br.readLine(); //header 
 			String line;
 			while ((line = br.readLine()) != null) {
 				String[] arr = line.trim().split(",");
