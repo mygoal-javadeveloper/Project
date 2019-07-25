@@ -14,10 +14,10 @@ import java.util.Arrays;
 
 public class UpdateCsvToSqlite {
 	public static void main(String[] args) {
-		File f1 = new File("E:/Account.csv");
+		File f1 = new File("../Account.csv");
 		try {
 			Class.forName("org.sqlite.JDBC");
-			Connection conn = DriverManager.getConnection("jdbc:sqlite://E:/SqliteDatabase/Tables.db");
+			Connection conn = DriverManager.getConnection("jdbc:sqlite://../SqliteDatabase/Tables.db");
 			if (conn != null) {
 				System.out.println("Connected to the database");
 				System.out.println(conn);
